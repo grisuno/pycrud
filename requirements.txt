@@ -1,0 +1,16 @@
+# requirements.txt
+
+# Flask framework for creating a web application
+Flask==2.1.1
+
+# Flask-SQLAlchemy for working with SQLAlchemy databases in Flask
+Flask-SQLAlchemy==3.1.1
+
+# SQLite database engine for Flask-SQLAlchemy
+SQLAlchemy==1.4.31
+
+# Flask-WTF for handling forms in Flask
+Flask-WTF==1.0.0
+
+# WTForms for form validation and rendering
+WTForms==3.0.1
