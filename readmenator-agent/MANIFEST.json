@@ -1,0 +1,21 @@
+{
+  "tool": "readmenator",
+  "generated_at": "2026-09-08T17:41:33Z",
+  "project_root": "/tmp/push_pycrud_20260908_131917",
+  "files": 2,
+  "symbols": 25,
+  "imports": 336,
+  "resolved_imports": 0,
+  "security_findings": 0,
+  "languages": {
+    "py": 2
+  },
+  "entrypoints": [],
+  "start_here": "INDEX.md",
+  "workflow": [
+    "grep -n '<keyword>' INDEX.md",
+    "cat KB_<subsystem>.md",
+    "grep -n '<file>' ARCHITECTURE.md SYMBOLS.md"
+  ],
+  "regenerate": "readmenator . --rebuild"
+}
