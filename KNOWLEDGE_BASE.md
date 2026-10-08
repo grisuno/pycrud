@@ -11,7 +11,7 @@
 
 **Total Files Parsed:** 2 | **Total Symbols Extracted:** 25 | **Total Imports:** 12
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -24,13 +24,12 @@
 6. [Hotspot Analysis](#hotspot-analysis)
 7. [Change Impact Analysis](#change-impact-analysis)
 8. [Suggested Linting Rules](#suggested-linting-rules)
-9. [Concept Graph](#concept-graph)
-10. [Orphans](#orphans)
-11. [Query Recipes](#query-recipes)
-12. [Structural Knowledge Map](#structural-knowledge-map)
-13. [UML Class Diagram](#uml-class-diagram)
-14. [Code Property Graph](#code-property-graph)
-15. [Architecture Reference](#architecture-reference)
+9. [Orphans](#orphans)
+10. [Query Recipes](#query-recipes)
+11. [Structural Knowledge Map](#structural-knowledge-map)
+12. [UML Class Diagram](#uml-class-diagram)
+13. [Code Property Graph](#code-property-graph)
+14. [Architecture Reference](#architecture-reference)
     - [PY (2 files)](#py-2-files)
 
 ---
@@ -113,41 +112,6 @@ Files ranked by combined complexity (symbol count) and centrality (connection co
 |------|-----------|------------|----------|---------|-------------|
 | `app.py` | 1.000 | 1.000 | 1.000 | 14 | 6 |
 | `app2.py` | 0.786 | 1.000 | 0.914 | 11 | 6 |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**11 concepts, 0 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `create` | 2 | 6 |
-| `get` | 2 | 6 |
-| `csv` | 2 | 3 |
-| `browse` | 2 | 2 |
-| `connection` | 2 | 2 |
-| `crud` | 2 | 2 |
-| `file` | 2 | 2 |
-| `generate` | 2 | 2 |
-| `gui` | 2 | 2 |
-| `records` | 2 | 2 |
-| `table` | 2 | 2 |
-
-### Dialectic Prompts
-
-- Thesis: `browse` centralizes 2 files; Antithesis: `connection` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `create` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `crud` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `csv` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `file` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `generate` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `get` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `gui` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `records` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `browse` centralizes 2 files; Antithesis: `table` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
 
 ---
 
